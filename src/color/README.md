@@ -11,7 +11,7 @@ A Template to remind you of your favorite color
 | favorite | Choose your favorite color. | string | red |
 
 
-
+push
 ---
 
 _Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/devcontainers/template-starter/blob/main/src/color/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
