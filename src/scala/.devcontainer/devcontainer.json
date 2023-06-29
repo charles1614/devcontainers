@@ -1,0 +1,31 @@
+{
+	"name": "Scala Dev",
+	// "image": "ghcr.io/devcontainers-contrib/features/scala-sdkman:2:${templateOption:imageVariant}",
+
+	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+	"features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "${templateOption:jdkVersion}",
+      "jdkDistro": "open",
+			"installMaven": "true",
+			"mavenVersion": "3.8.6",
+			"installGradle": "false"
+    },
+    "ghcr.io/devcontainers-contrib/features/scala-sdkman:2": {
+      "version": "${templateOption:scalaVersion}",
+      "jdkVersion": "${templateOption:jdkVersion}",
+      "jdkDistro": "open"
+    }
+  },
+
+	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// "postCreateCommand": "echo '${templateOption:favorite}' > /tmp/color.txt"
+
+	// 👇 Configure tool-specific properties.
+	// "customizations": {},
+
+	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

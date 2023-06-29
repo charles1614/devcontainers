@@ -1,0 +1,31 @@
+{
+    "id": "scala",
+    "version": "1.0.0",
+    "name": "scala devcontainer",
+    "description": "A Template for scala development",
+    "documentationURL": "https://github.com/charles1614/template-starter/tree/main/src/scala",
+    "options": {
+        "jdkVersion": {
+            "type": "string",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "17",
+                "11"
+            ],
+            "default": "latest"
+        },
+        "scalaVersion": {
+            "type": "string",
+            "description": "Enter a scala version to install",
+            "proposals": [
+                "latest",
+                "2.12.10"
+            ],
+            "default": "latest"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
